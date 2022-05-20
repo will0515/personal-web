@@ -6,13 +6,13 @@ body{
 }
 @font-face{
 	font-family: "xieti";
-	src: url(/font/xieti.ttf);
+	src: url(../font/xieti.ttf);
 }
 // HOME-PAGE
 
 .top-bar-dark{
 	.logo{
-		background-image: url(/images/logo-dark.png) !important;
+		background-image: url(../images/logo-dark.png) !important;
 		background-repeat: no-repeat;
 		background-size: cover;
 		width: 50px;
@@ -40,7 +40,7 @@ body{
 		align-items: center;
 		margin: 0 auto;
 		.logo{
-			background-image: url(/images/logo.png);
+			background-image: url(../images/logo.png);
 			background-repeat: no-repeat;
 			background-size: cover;
 			width: 50px;
@@ -72,7 +72,7 @@ body{
 	width: 100%;
 }
 .banner-home{
-	background-image: url(/images/top-photo-design.png);
+	background-image: url(../images/top-photo-design.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -128,7 +128,7 @@ body{
 	}
 }
 .design-tangtang{
-	background-image: url(/images/design-tangtang.png);
+	background-image: url(../images/design-tangtang.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -157,7 +157,7 @@ body{
 	width: 100%;
 }
 .banner-tangtang{
-	background-image: url(/images/banner-tangtang.png);
+	background-image: url(../images/banner-tangtang.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -251,7 +251,7 @@ video{
 	background-color: #BDE2C7;
 	width: 100%;
 	align-items: center;
-	background-image: url(/images/image-weee-bg.png);
+	background-image: url(../images/image-weee-bg.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 1080px;
@@ -284,7 +284,7 @@ video{
 		justify-content: left;
 		margin-left: 50px;
 		.logo-weee{
-			background-image: url(/images/image-weee-logo.png);
+			background-image: url(../images/image-weee-logo.png);
 			background-size: cover;
 			background-repeat: no-repeat;	
 			height: 60px;
@@ -537,7 +537,7 @@ video{
 		margin: 0 auto;
 		padding: 20px 0 0;
 		.logo{
-			background-image: url(/images/logo.png);
+			background-image: url(../images/logo.png);
 			background-repeat: no-repeat;
 			background-size: cover;
 			width: 50px;
