@@ -7,7 +7,7 @@ body {
 
 @font-face {
   font-family: "xieti";
-  src: url(../font/xieti.ttf);
+  src: url(./xieti.ttf);
 }
 .top-bar-dark .logo {
   background-image: url(../images/logo-dark.png) !important;
