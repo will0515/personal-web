@@ -16,10 +16,22 @@
 				<img src="./images/logo.png" alt="">
 			</a>
 			<div class="menu">
-				<div class="label">WORK</div>
-				<div class="label">CONTACT</div>
+				<a href="./index.html">
+					<div class="label">WORK</div>
+				</a>
+				<a href="./design-contact.html">
+					<div class="label">CONTACT</div>
+				</a>
 				<img class="icon-menu" src="./images/icon-menu.png" alt="">
 			</div>
+		</div>
+		<div class="click-menu" style="display:none;">
+			<a href="./index.html">
+				<div class="label">WORK</div>
+			</a>
+			<a href="./design-contact.html">
+				<div class="label">CONTACT</div>
+			</a>
 		</div>
 	</div>
 	<div class="banner">
@@ -33,7 +45,7 @@
 			<h2>用户可以在Weee! 上分享自己的烹饪技巧和烹饪经验。同时海量的食材可以免去用户寻找食材的苦恼。</h2>
 		</div>
 	</div>
-	<div class="design-list-group" style="background-color: #fff;height: 1080px; justify-content: center;">
+	<div class="design-list-group" >
 		<video src="./video/weee.mp4" autoplay muted loop></video>
 	</div>
 	<div class="image-list">
@@ -50,4 +62,17 @@
 		</div>
 	</div>
 </body>
+<script>
+	window.onload = function() {
+		const iconMenuBtn = document.getElementsByClassName('icon-menu')[0];
+		const clickMenu = document.getElementsByClassName('click-menu')[0];
+		iconMenuBtn.onclick = function() {
+			if (clickMenu.style.display === 'none') {
+				clickMenu.style.display = 'flex';
+			} else {
+				clickMenu.style.display = 'none';
+			}
+		}
+	}
+</script>
 </html>

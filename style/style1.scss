@@ -71,14 +71,14 @@ a{
 	width: 100%;
 	display: none;
 	flex-direction: column;
-	// background-color: rgba(0, 0, 0, 0.5);
-	background-color: #222;
+	background-color: rgba(0, 0, 0, 0.8);
 	position: fixed;
 	.label{
-		line-height: 3;
+		line-height: 4;
 		font-size: 20px;
-		color: #fff;
+		color: #4F4B71;
 		text-align: center;
+		font-weight: 900;
 	}
 }
 
@@ -179,7 +179,21 @@ video{
 	max-width: 1470px;
 }
 
-
+h1{
+	font-family: "Hiragino Sans GB" ;
+}
+h2{
+	font-family: "Hiragino Sans GB" ;
+}
+.label{
+		font-family: "Hiragino Sans GB" ;
+}
+.title{
+	font-family: "Hiragino Sans GB" ;
+}
+.text{
+	font-family: "Hiragino Sans GB";
+}
 
 // HOME-PAGE
 
@@ -441,26 +455,30 @@ video{
 
 //weee
 .page-weee{
-	display: block;
+	display: flex;
+	flex-direction: column;
 	.banner{
 		display: flex;
 		width: 100%;
 		position: relative;
 		flex-direction: row;
 		justify-content: center;
+		align-items: center;
 		.bg{
 			width: 100%;
 			position: absolute;
 			z-index: -1;
+			margin: 0;
 		}
 		.weee-phone{
 			width: 40%;
+			height: 40%;
 			margin: 5vw 0;
 		}
 		.title-group{
 			display: flex;
 			flex-direction: column;
-			margin: 10vw 0;
+			margin: 6vw 0;
 			h1{
 				position: relative;
 				font-size: 40px;
@@ -491,29 +509,46 @@ video{
 		}
 	}
 	.image-list{
+		display: flex;
 		background-image:linear-gradient(#A6D7B4, #8BBF8F) ;
+		align-items: center;
 	}
 	img{
-		width: 100%;
+		width: 80%;
+		margin:5vw auto;
 	}
 	video{
-		width: 100%;
-		margin: 0 auto;
+		width: 50%;
+		margin: 5vw auto;
+		max-width: 1500px;
 	}
 }
 @media screen and (max-width: 1500px) and (min-width: 701px){
 	.page-weee{
 		.banner{
+			.logo-weee{
+				height: 40px;
+				width: 140px;
+				margin-bottom: 10px;
+			}
+			img{
+				width: 30%;
+			}
 			.title-group{
 				h1{
+					max-width: 10px 0;
 					max-width: 300px;
-					font-size: 30px;
+					font-size: 24px;
 				}
 				h2{
+					max-width: 300px;
 					font-size: 14px;
+					max-width: 5px 0;
 				}
-	
 			}
+		}
+		video{
+			width: 50%;
 		}
 	}
 	.title{
@@ -528,39 +563,19 @@ video{
 @media screen and (max-width: 700px) and (min-width: 320px){
 	.page-weee{
 		.banner{
-			h1{
-				font-size: 30px;
+			img{
+				width: 30%;
+			}
+			.title-group{
+				h1{
+					max-width: 300px;
+					font-size: 20px;
+				}
+				h2{
+					font-size: 14px;
+				}
 			}
 		}
-		.list{
-			margin: 20px 10px 60px 10px;
-			.card{
-				margin: 10px;
-			}
-			.card1{
-				width: calc(100% - 20px);
-				h1{
-					font-size: 25px;
-					margin: 30px;
-				}
-			}  
-			.card3{
-				width: calc(50% - 20px);
-				h1{
-					text-align: center;
-					font-size: 15px;
-					margin: 0 0 20px;
-				}
-			} 
-		}
-	}
-	.title{
-		font-size: 30px;
-		margin: 40px 0 20px 0 ;
-	}
-	.text{
-		font-size: 14px;
-		margin: 10px 0 10px;
 	}
 }
 
@@ -1087,47 +1102,93 @@ video{
 //contact
 .page-contact{
 	display: block;
+	background-color: #3C3461;
+	background-image: url(../images/image-contact-bg.png);
+	background-repeat: repeat;
+	background-size: auto;
 	.banner{
 		display: flex;
 		width: 100%;
-		position: relative;
 		justify-content: center;
-		background-color: #469EF0;
 		img{
 			width: 100%;
-		}
-		h1{
 			position: absolute;
-			width: 70%;
-			font-size: 36px;
-			text-align: left;
-			color: #fff;
-			font-family: "xieti";
-			line-height: 2;
 			left: 50%;
-			top: 25%;
-			transform: translate(-40%, -50%);
+			top: 50%;
+			transform: translate(-50%, -50%);	
+		}
+		.text-group{
+			width: 80%;
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			z-index: 1;
+			margin: 10vw;
+			align-items: center;
+			h1{
+				width: 80%;
+				position: relative;
+				font-size: 36px;
+				text-align: left;
+				color: #fff;
+				font-family: "xieti";
+				line-height: 1;
+				text-align: left;
+				margin-top: 40px;
+			}
+			h2{
+				width: 80%;
+				font-size: 24px;
+				text-align: left;
+				color: #fff;
+				font-family: "xieti";
+				line-height: 1;
+				text-align: left;
+			}
 		}	
+		.bg{
+			display: flex;
+		}
+		.bg-phone{
+			display: none;
+		}
+	}
+	.footer-bar-group{
+		position: absolute;
+		bottom: 0;
 	}
 }
-@media screen and (max-width: 1500px) and (min-width: 901px){
+@media screen and (max-width: 1500px) and (min-width: 801px){
+	.page-contact{
+		.banner{
+			.text-group{
+				margin: 10vw;
+				h1{
+					font-size: 30px;
+				}
+				h2{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px) and (min-width: 320px){
 	.page-contact{
 		.banner{
 			img{
-
+				top: 60%;
 			}
-			h1{
-				font-size: 30px;
-			}
-		}
-	}
-}
-@media screen and (max-width: 900px) and (min-width: 320px){
-	.page-contact{
-		.banner{
-			h1{
-				font-size: 20px;
-				transform: translate(-50%, -50%);
+			.text-group{
+				margin: 20vw;
+				h1{
+					font-size: 30px;
+					text-align: center;
+				}
+				h2{
+					font-size: 20px;
+					text-align: center;
+				}
 			}
 		}
 	}
