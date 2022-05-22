@@ -450,6 +450,7 @@ video{
 		width: 100%;
 		position: relative;
 		flex-direction: row;
+		justify-content: center;
 		.bg{
 			width: 100%;
 			position: absolute;
@@ -457,65 +458,32 @@ video{
 		}
 		.weee-phone{
 			width: 40%;
+			margin: 5vw 0;
 		}
-		h1{
-			width: 80%;
-			position: absolute;
-			font-size: 140px;
-			margin: auto ;
-			text-align: left;
-			color: #fff;
-			font-family: "xieti";
-			line-height: 1.2;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
+		.title-group{
+			display: flex;
+			flex-direction: column;
+			margin: 10vw 0;
+			h1{
+				position: relative;
+				font-size: 40px;
+				margin: 20px 0	 ;
+				text-align: left;
+				color: #222;
+				font-weight: 900;
+				line-height: 1.2;
+			}
+			h2{
+				max-width: 600px;
+				position: relative;
+				font-size: 20px;
+				margin: 10px 0 ;
+				text-align: left;
+				color: #333333;
+				font-weight: 300;
+				line-height: 1.5;
+			}	
 		}
-	}
-	img{
-		width: 100%;
-	}
-
-}
-
-.banner-weee-group{
-	display: flex;
-	flex-direction: column;
-	background-color: #BDE2C7;
-	width: 100%;
-	align-items: center;
-	background-image: url(../images/image-weee-bg.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 1080px;
-	justify-content: center;
-	h1{
-		max-width: 600px;
-		position: relative;
-		font-size: 40px;
-		margin: auto ;
-		text-align: left;
-		color: #fff;
-		font-weight: 800;
-		font-family: "xieti";
-		vertical-align: middle;
-	}
-}
-.banner-weee{
-	width: 100%;
-	max-width: 1500px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	img{
-		width: 50%;
-	}
-	.title-group{
-		display: flex;
-		flex-direction: column;
-		justify-content: left;
-		margin-left: 50px;
 		.logo-weee{
 			background-image: url(../images/image-weee-logo.png);
 			background-size: cover;
@@ -524,37 +492,81 @@ video{
 			width: 210px;
 			margin-bottom: 40px;
 		}
-		h1{
-			position: relative;
-			font-size: 40px;
-			margin: 20px 0	 ;
-			text-align: left;
-			color: #333333;
-			font-weight: 800;
-			font-family: "xieti";
-			line-height: 1.2;
-		}
-		h2{
-			max-width: 600px;
-			position: relative;
-			font-size: 20px;
-			margin: 20px 0 ;
-			text-align: left;
-			color: #333333;
-			font-weight: 300;
-			line-height: 1.5;
-		}
 	}
-}
-.image-list{
-	display: flex;
-	width: 100%;
-	background-image:linear-gradient(#A6D7B4 , #8BBF8F) ;
+	.image-list{
+		background-image:linear-gradient(#A6D7B4, #8BBF8F) ;
+	}
 	img{
-		max-width: 1500px;
-		margin: 100px auto;
+		width: 100%;
+	}
+	video{
+		width: 100%;
+		margin: 0 auto;
 	}
 }
+@media screen and (max-width: 1500px) and (min-width: 701px){
+	.page-weee{
+		.banner{
+			.title-group{
+				h1{
+					max-width: 300px;
+					font-size: 30px;
+				}
+				h2{
+					font-size: 14px;
+				}
+	
+			}
+		}
+	}
+	.title{
+		font-size: 40px;
+		margin: 80px 0 20px 0 ;
+	}
+	.text{
+		font-size: 16px;
+		margin: 10px 0 20px;
+	}	
+}
+@media screen and (max-width: 700px) and (min-width: 320px){
+	.page-weee{
+		.banner{
+			h1{
+				font-size: 30px;
+			}
+		}
+		.list{
+			margin: 20px 10px 60px 10px;
+			.card{
+				margin: 10px;
+			}
+			.card1{
+				width: calc(100% - 20px);
+				h1{
+					font-size: 25px;
+					margin: 30px;
+				}
+			}  
+			.card3{
+				width: calc(50% - 20px);
+				h1{
+					text-align: center;
+					font-size: 15px;
+					margin: 0 0 20px;
+				}
+			} 
+		}
+	}
+	.title{
+		font-size: 30px;
+		margin: 40px 0 20px 0 ;
+	}
+	.text{
+		font-size: 14px;
+		margin: 10px 0 10px;
+	}
+}
+
 
 
 //medal
