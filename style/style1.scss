@@ -32,17 +32,29 @@ body{
 			height: 24px;
 			margin: 0 50px;
 		}
+		.white-logo{
+			display: none;
+		}
+		.black-logo{
+			display: flex;
+		}
 		.menu{
 			display: flex;
 			flex-direction: row;
 			justify-content: end;
+			align-items: center;
+			height: 80px;
 			margin: 0 35px;
 			.label{
 				font-size: 18px;
 				margin: 0 15px;
-				line-height: 76px;
 				color: #fff;
 				font-weight: 600;
+			}
+			.icon-menu{
+				width: 100%;
+				display: none;
+				margin: 0 15px;
 			}
 		}
 		.top-dark{
@@ -52,12 +64,43 @@ body{
 		}		
 	}
 }
+.click-menu {
+	display: none;
+	width: 100%;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+	.label{
+		line-height: 3;
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+	}
+}
+#click-menu .label:target{
+	
+}
 @media screen and (max-width: 1200px) and (min-width: 701px){
 	.top-bar{
 		position: relative;
 		background-color: #222;
 		.top-bar-contain{
+			background-color: #222;
 			margin: 0;
+			.black-logo{
+				display: none;
+			}
+			.white-logo{
+				display: flex;
+			}
+			.menu{
+				height: 80px;
+				.label{
+					display: none;
+				}
+				.icon-menu{
+					display: flex;
+				}
+			}
 		}
 		img{
 			width: 40px;
@@ -65,19 +108,40 @@ body{
 			margin: 0 30px;
 		}
 	}
+	.click-menu{
+		display: flex;
+	}
 }
 @media screen and (max-width: 700px) and (min-width: 320px){
 	.top-bar{
 		position: relative;
-		background-color: #222;
 		.top-bar-contain{
+			background-color: #222;
 			margin: 0;
+			.black-logo{
+				display: none;
+			}
+			.white-logo{
+				display: flex;
+			}
+			.menu{
+				height: 60px;
+				.label{
+					display: none;
+				}
+				.icon-menu{
+					display: flex;
+				}
+			}
 		}
 		img{
 			width: 40px;
 			height: 15px;
 			margin: 0 30px;
 		}
+	}
+	.click-menu{
+		display: flex;
 	}
 }
 	
@@ -385,15 +449,14 @@ video{
 		display: flex;
 		width: 100%;
 		position: relative;
-		img{
-			width: 100%;
-		}
+		flex-direction: row;
 		.bg{
+			width: 100%;
 			position: absolute;
 			z-index: -1;
 		}
 		.weee-phone{
-			width: 50%;
+			width: 40%;
 		}
 		h1{
 			width: 80%;
@@ -408,9 +471,6 @@ video{
 			top: 50%;
 			transform: translate(-50%, -50%);
 		}
-	}
-	video{
-		width: 100%;
 	}
 	img{
 		width: 100%;
@@ -1015,7 +1075,54 @@ video{
 	}
 }
 
+//contact
+.page-contact{
+	display: block;
+	.banner{
+		display: flex;
+		width: 100%;
+		position: relative;
+		justify-content: center;
+		background-color: #469EF0;
+		img{
+			width: 100%;
+		}
+		h1{
+			position: absolute;
+			width: 70%;
+			font-size: 36px;
+			text-align: left;
+			color: #fff;
+			font-family: "xieti";
+			line-height: 2;
+			left: 50%;
+			top: 25%;
+			transform: translate(-40%, -50%);
+		}	
+	}
+}
+@media screen and (max-width: 1500px) and (min-width: 901px){
+	.page-contact{
+		.banner{
+			img{
 
+			}
+			h1{
+				font-size: 30px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 900px) and (min-width: 320px){
+	.page-contact{
+		.banner{
+			h1{
+				font-size: 20px;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
 
 // FOOTER-BAR
 
@@ -1030,7 +1137,7 @@ video{
 		flex-direction: row;
 		max-width: 1200px;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		margin: 0 auto;
 		padding: 20px 0 0;
 		.logo{
@@ -1041,29 +1148,6 @@ video{
 			height: 20px;
 			margin: 10px 0;
 			left: 0;
-		}
-		.menu{
-			display: flex;
-			flex-direction: row;
-			.label{
-				font-size: 18px;
-				margin: 0 15px;
-				line-height: 76px;
-				color: #fff;
-				font-weight: 600;
-			}
-		}
-		.contect-button{
-			height: 44px;
-			width: 120px;
-			border-radius: 30px;
-			background-color: rgb(248, 135, 43);
-			text-align: center;
-			line-height: 44px;
-			color: #fff;
-			font-size: 18px;
-			font-weight: 500;
-			right: 0;
 		}
 	}
 	.footer-copyright{
@@ -1076,6 +1160,26 @@ video{
 		a{
 			color: #fff;
 			font-weight: 600;
+		}
+	}
+}
+@media screen and (max-width: 1500px) and (min-width: 901px){
+	.footer-bar-group{
+		.banner{
+			h1{
+				font-size: 12px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 900px) and (min-width: 320px){
+	.footer-bar-group{
+		.banner{
+			h1{
+				font-size: 12px;
+				line-height: 40px;
+			}
 		}
 	}
 }
