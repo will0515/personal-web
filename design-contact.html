@@ -25,8 +25,8 @@
 				<img class="icon-menu" src="./images/icon-menu.png" alt="">
 			</div>
 		</div>
-		<div class="click-menu">
-			<div class="label">WORK</div>
+		<div class="click-menu" style="display:none;">
+			<div class="label">WORK-1</div>
 			<div class="label">CONTACT</div>
 		</div>
 	</div>
@@ -45,4 +45,17 @@
 		</div>
 	</div>
 </body>
+<script>
+	window.onload = function() {
+		const iconMenuBtn = document.getElementsByClassName('icon-menu')[0];
+		const clickMenu = document.getElementsByClassName('click-menu')[0];
+		iconMenuBtn.onclick = function() {
+			if (clickMenu.style.display === 'none') {
+				clickMenu.style.display = 'flex';
+			} else {
+				clickMenu.style.display = 'none';
+			}
+		}
+	}
+</script>
 </html>
